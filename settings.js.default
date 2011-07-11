@@ -1,0 +1,28 @@
+// Jabber ID
+exports.username = 'username@example.com';
+
+// Password
+exports.password = 'password';
+
+// Jabber host
+exports.host = 'talk.google.com';
+
+// List of bot admins. These are JIDs that the bot will respond to
+exports.admins = ['admin@example.com'];
+
+// If true, the bot will send a message to all admins when it comes online
+exports.admin_notification = true;
+
+// MongoDB database name
+exports.db = 'botlog';
+
+// Blog title
+exports.title = 'botLog';
+
+// Blog tagline
+exports.tagline = 'Micro blogging framework';
+
+// Blog URL - used in RSS feed generation.
+exports.url = 'http://awesomeshit.caseybanner.ca';
+
+ 

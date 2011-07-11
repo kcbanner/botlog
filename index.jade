@@ -1,0 +1,39 @@
+!!! 5
+html(lang="en")
+  head
+    title= title
+    meta(charset="utf-8")
+    link(rel="shortcut icon", href="/favicon.ico")
+    link(rel="stylesheet", href="css/style.css?v=2")
+    link(href="http://fonts.googleapis.com/css?family=Vollkorn&subset=latin", rel="stylesheet", type="text/css")
+    script(type="text/javascript")
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3423311-5']);
+      _gaq.push(['_setDomainName', '.caseybanner.ca']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  body
+    div#container
+      div#header
+        h1= title
+        p= tagline
+      div#main
+        ul
+          - each post in posts
+            li.date= post.date_txt
+            li.post
+              a(href=post.link)= post.title
+            li.caption= post.text
+      div#footer
+        | Me:
+        a(href="http://www.twitter.com/kcbanner") Twitter
+        a(href="http://www.caseybanner.ca") Web
+        br
+        br
+        a(href="http://feeds.feedburner.com/ascaseybannerca")
+          img(src="/images/rss.png")
