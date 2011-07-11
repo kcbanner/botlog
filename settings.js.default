@@ -25,4 +25,6 @@ exports.tagline = 'Micro blogging framework';
 // Blog URL - used in RSS feed generation.
 exports.url = 'http://awesomeshit.caseybanner.ca';
 
+// Bot name
+exports.name = 'botLog Bot'
  

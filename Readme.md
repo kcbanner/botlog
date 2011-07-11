@@ -11,7 +11,9 @@ Posts are store in a MongoDB database.
 Copy `settings.js.default` to `settings.js`, and change to fit your
 configuration.
 
-Start the bot with `node bot.js`. 
+Start the bot:
+
+    $ ./bot.sh
 
 Send it messages! Send `help` for a command list and usage information.
 

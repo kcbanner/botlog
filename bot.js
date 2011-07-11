@@ -103,7 +103,7 @@ client.on('online', function () {
         to: settings.admins[admin],
         type: 'chat'
       });
-      message.c('body').t('AwesomeBot online');
+      message.c('body').t(settings.name+' online');
 
       client.send(message);
     }
