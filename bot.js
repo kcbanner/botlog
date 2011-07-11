@@ -174,7 +174,8 @@ var commands = {
     }
   },
   post: {
-    usage: ' <type>,<title>,<link>[,text] : Create post',
+    usage: ' <type>,<title>,<link>[,text] : Create post. Only supported' +
+      '`type` is "link".',
     command: function(args, callback) {
       var fields = args.slice(1).join(' ').split(',');
       
