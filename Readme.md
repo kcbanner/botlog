@@ -15,6 +15,8 @@ Start the bot with `node bot.js`.
 
 Send it messages! Send `help` for a command list and usage information.
 
+Point your webserver at the public_html/ directory.
+
 ## Dependencies
 
 MongoDB needs to be running.
